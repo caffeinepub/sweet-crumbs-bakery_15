@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/assets/fonts/InstrumentSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/assets/fonts/GeneralSans-Variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Warm cream backgrounds */
+    --background: 0.97 0.018 80;
+    --foreground: 0.22 0.04 55;
+
+    --card: 0.995 0.012 75;
+    --card-foreground: 0.22 0.04 55;
+
+    --popover: 0.995 0.012 75;
+    --popover-foreground: 0.22 0.04 55;
+
+    /* Rich warm brown primary */
+    --primary: 0.38 0.07 50;
+    --primary-foreground: 0.97 0.018 80;
+
+    /* Soft peach secondary */
+    --secondary: 0.93 0.03 70;
+    --secondary-foreground: 0.38 0.07 50;
+
+    --muted: 0.93 0.02 75;
+    --muted-foreground: 0.52 0.04 60;
+
+    /* Rose/peach accent */
+    --accent: 0.88 0.06 30;
+    --accent-foreground: 0.22 0.04 55;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.03 70;
+    --input: 0.88 0.03 70;
+    --ring: 0.55 0.06 50;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.93 0.025 75;
+    --sidebar-foreground: 0.22 0.04 55;
+    --sidebar-primary: 0.38 0.07 50;
+    --sidebar-primary-foreground: 0.97 0.018 80;
+    --sidebar-accent: 0.88 0.06 30;
+    --sidebar-accent-foreground: 0.22 0.04 55;
+    --sidebar-border: 0.88 0.03 70;
+    --sidebar-ring: 0.55 0.06 50;
+
+    /* Bakery custom tokens */
+    --warm-amber: 0.78 0.12 70;
+    --warm-brown: 0.38 0.07 50;
+    --deep-brown: 0.25 0.06 48;
+    --cream-light: 0.99 0.01 80;
+    --peach-rose: 0.82 0.09 25;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
